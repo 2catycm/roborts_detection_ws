@@ -1,0 +1,8 @@
+prefix=/home/artinx-000/detection_ws/src/cmake-build-debug/devel
+
+Name: roborts_common
+Description: Description of roborts_common
+Version: 1.0.0
+Cflags: -I/home/artinx-000/detection_ws/src/roborts_detection/roborts_common/include
+Libs: -L${prefix}/lib 
+Requires: 

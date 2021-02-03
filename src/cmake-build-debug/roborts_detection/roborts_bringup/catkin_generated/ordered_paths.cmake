@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/artinx-000/detection_ws/src/cmake-build-debug/devel/include;/home/artinx-000/detection_ws/src/roborts_detection/roborts_common/include;/home/artinx-000/detection_ws/src/roborts_detection/roborts_costmap/include")

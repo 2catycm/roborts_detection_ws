@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/artinx-000/detection_ws/src/cmake-build-debug/devel/setup.sh

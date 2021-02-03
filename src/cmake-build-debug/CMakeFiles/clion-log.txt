@@ -1,0 +1,910 @@
+/home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/artinx-000/detection_ws/src
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/artinx-000/detection_ws/src/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/kinetic
+-- This workspace overlays: /opt/ros/kinetic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.12", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/artinx-000/detection_ws/src/cmake-build-debug/test_results
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.12") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 13 packages in topological order:
+-- ~~  - roborts (metapackage)
+WARNING: The metapackage 'roborts' has no CMakeLists.txt. Please add one to the package source. You can use the following file: /home/artinx-000/detection_ws/src/cmake-build-debug/catkin_generated/metapackages/roborts/CMakeLists.txt
+-- ~~  - roborts_msgs
+-- ~~  - roborts_common
+-- ~~  - galaxy_camera_usb2
+-- ~~  - roborts_camera
+-- ~~  - roborts_costmap
+-- ~~  - roborts_decision
+-- ~~  - roborts_detection
+-- ~~  - roborts_planning
+-- ~~  - roborts_base
+-- ~~  - roborts_localization
+-- ~~  - roborts_bringup
+-- ~~  - roborts_tracking
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin metapackage: 'roborts'
+-- ==> add_subdirectory(roborts_detection/roborts) (using generated file from <buildspace>/catkin_generated/metapackages/roborts)
+WARNING: Add a CMakeLists.txt file to the metapackage 'roborts'
+-- +++ processing catkin package: 'roborts_msgs'
+-- ==> add_subdirectory(roborts_detection/roborts_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Generating .msg files for action roborts_msgs/LocalPlanner /home/artinx-000/detection_ws/src/roborts_detection/roborts_msgs/action/LocalPlanner.action
+Generating for action LocalPlanner
+-- Generating .msg files for action roborts_msgs/GlobalPlanner /home/artinx-000/detection_ws/src/roborts_detection/roborts_msgs/action/GlobalPlanner.action
+Generating for action GlobalPlanner
+-- Generating .msg files for action roborts_msgs/ArmorDetection /home/artinx-000/detection_ws/src/roborts_detection/roborts_msgs/action/ArmorDetection.action
+Generating for action ArmorDetection
+-- roborts_msgs: 38 messages, 3 services
+-- +++ processing catkin package: 'roborts_common'
+-- ==> add_subdirectory(roborts_detection/roborts_common)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found Boost: /usr/include (found version "1.58.0")  
+-- Found Eigen3: /usr/include/eigen3 (Required is at least version "2.91.0") 
+-- +++ processing catkin package: 'galaxy_camera_usb2'
+-- ==> add_subdirectory(roborts_detection/galaxy_camera_usb2)
+-- +++ processing catkin package: 'roborts_camera'
+-- ==> add_subdirectory(roborts_detection/roborts_camera)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "2.6.1") 
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+protobuf /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread found
+-- Found OpenCV: /opt/ros/kinetic (found suitable version "3.3.1", minimum required is "3") 
+
+-- +++ processing catkin package: 'roborts_costmap'
+-- ==> add_subdirectory(roborts_detection/roborts_costmap)
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+protobuf /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread found
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.2.92
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (eigen) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:143 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:458 (find_eigen)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:654 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found eigen: /usr/include/eigen3  
+-- Found Boost: /usr/include (found suitable version "1.58.0", minimum required is "1.40.0") found components: system filesystem thread date_time iostreams serialization chrono atomic regex 
+-- Checking for module 'flann'
+--   Found flann, version 1.8.4
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (Flann) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:304 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:460 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:654 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Flann: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a  
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (Flann) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:304 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:460 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:654 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Checking for module 'libopenni'
+--   Found libopenni, version 1.5.4.0
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:226 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:464 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found openni: /usr/lib/libOpenNI.so  
+-- Checking for module 'libopenni2'
+--   Found libopenni2, version 2.2.0.3
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (OpenNI2)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:262 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:466 (find_openni2)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenNI2: /usr/lib/libOpenNI2.so  
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (libusb-1.0)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:345 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:470 (find_libusb)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found libusb-1.0: /usr/include  
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (qhull) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:176 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:462 (find_qhull)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found qhull: /usr/lib/x86_64-linux-gnu/libqhull.so  
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:226 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:464 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (OpenNI2)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:262 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:466 (find_openni2)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:226 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:464 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_COMMON
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_COMMON)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+-- looking for PCL_KDTREE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+-- looking for PCL_OCTREE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+-- looking for PCL_SEARCH
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+-- looking for PCL_IO
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_IO)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+-- looking for PCL_SAMPLE_CONSENSUS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package
+  (PCL).  This can lead to problems in calling code that expects
+  `find_package` result variables (e.g., `_FOUND`) to follow a certain
+  pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+-- looking for PCL_FILTERS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_FILTERS) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+-- looking for PCL_GEOMETRY
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_GEOMETRY) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.7  
+-- looking for PCL_FEATURES
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_FEATURES) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+-- looking for PCL_SEGMENTATION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SEGMENTATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+-- looking for PCL_SURFACE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SURFACE) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+-- looking for PCL_REGISTRATION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_REGISTRATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+-- looking for PCL_RECOGNITION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_RECOGNITION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+-- looking for PCL_KEYPOINTS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_KEYPOINTS) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+-- looking for PCL_VISUALIZATION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_VISUALIZATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+-- looking for PCL_PEOPLE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_PEOPLE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+-- looking for PCL_OUTOFCORE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_OUTOFCORE) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+-- looking for PCL_TRACKING
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_TRACKING) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+-- looking for PCL_APPS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_APPS)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find PCL_APPS (missing: PCL_APPS_LIBRARY) 
+-- looking for PCL_MODELER
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_MODELER) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_MODELER: /usr/include/pcl-1.7  
+-- looking for PCL_IN_HAND_SCANNER
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_IN_HAND_SCANNER) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.7  
+-- looking for PCL_POINT_CLOUD_EDITOR
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_POINT_CLOUD_EDITOR) does not match the name of the calling package
+  (PCL).  This can lead to problems in calling code that expects
+  `find_package` result variables (e.g., `_FOUND`) to follow a certain
+  pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_costmap/CMakeLists.txt:20 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.7  
+-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;-lpthread;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_common.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;optimized;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_search.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_search.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL;optimized;/usr/lib/x86_64-linux-gnu/libpcl_io.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_io.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_features.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_features.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_people.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_people.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;-lpthread;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL (Required is at least version "1.7") 
+-- Found Boost: /usr/include (found version "1.58.0")  
+
+-- +++ processing catkin package: 'roborts_decision'
+-- ==> add_subdirectory(roborts_detection/roborts_decision)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+protobuf /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread found
+
+-- +++ processing catkin package: 'roborts_detection'
+-- ==> add_subdirectory(roborts_detection/roborts_detection)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+protobuf /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread found
+
+
+-- +++ processing catkin package: 'roborts_planning'
+-- ==> add_subdirectory(roborts_detection/roborts_planning)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Searching for g2o ...
+-- Found g2o headers in: /opt/ros/kinetic/include/g2o
+-- Found libg2o: /opt/ros/kinetic/lib/libg2o_csparse_extension.so;/opt/ros/kinetic/lib/libg2o_core.so;/opt/ros/kinetic/lib/libg2o_stuff.so;/opt/ros/kinetic/lib/libg2o_types_slam2d.so;/opt/ros/kinetic/lib/libg2o_types_slam3d.so;/opt/ros/kinetic/lib/libg2o_solver_cholmod.so;/opt/ros/kinetic/lib/libg2o_solver_pcg.so;/opt/ros/kinetic/lib/libg2o_solver_csparse.so;/opt/ros/kinetic/lib/libg2o_incremental.so
+-- Found SuiteSparse
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (eigen) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:143 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:458 (find_eigen)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:654 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/include (found suitable version "1.58.0", minimum required is "1.40.0") found components: system filesystem thread date_time iostreams serialization chrono atomic regex 
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (Flann) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:304 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:460 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:654 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (Flann) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:304 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:460 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:654 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:226 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:464 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (OpenNI2)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:262 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:466 (find_openni2)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (libusb-1.0)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:345 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:470 (find_libusb)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (qhull) does
+  not match the name of the calling package (PCL).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:176 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:462 (find_qhull)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:226 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:464 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (OpenNI2)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:262 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:466 (find_openni2)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (openni)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:226 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:464 (find_openni)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:651 (find_external_library)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_COMMON
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_COMMON)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_KDTREE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_OCTREE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SEARCH
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_IO
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_IO)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SAMPLE_CONSENSUS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package
+  (PCL).  This can lead to problems in calling code that expects
+  `find_package` result variables (e.g., `_FOUND`) to follow a certain
+  pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_FILTERS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_FILTERS) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_GEOMETRY
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_GEOMETRY) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_FEATURES
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_FEATURES) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SEGMENTATION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SEGMENTATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_SURFACE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_SURFACE) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_REGISTRATION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_REGISTRATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_RECOGNITION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_RECOGNITION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_KEYPOINTS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_KEYPOINTS) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_VISUALIZATION
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_VISUALIZATION) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_PEOPLE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_PEOPLE)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_OUTOFCORE
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_OUTOFCORE) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_TRACKING
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_TRACKING) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_APPS
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_APPS)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:708 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find PCL_APPS (missing: PCL_APPS_LIBRARY) 
+-- looking for PCL_MODELER
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_MODELER) does not match the name of the calling package (PCL).  This
+  can lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_IN_HAND_SCANNER
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_IN_HAND_SCANNER) does not match the name of the calling package (PCL).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- looking for PCL_POINT_CLOUD_EDITOR
+CMake Warning (dev) at /home/artinx-000/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PCL_POINT_CLOUD_EDITOR) does not match the name of the calling package
+  (PCL).  This can lead to problems in calling code that expects
+  `find_package` result variables (e.g., `_FOUND`) to follow a certain
+  pattern.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:711 (find_package_handle_standard_args)
+  roborts_detection/roborts_planning/CMakeLists.txt:25 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+protobuf /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread found
+-- Found Boost: /usr/include (found version "1.58.0")  
+
+
+
+
+-- +++ processing catkin package: 'roborts_base'
+-- ==> add_subdirectory(roborts_detection/roborts_base)
+-- Found Glog: /usr/local/include  
+-- Found glog    (include: /usr/local/include, library: /usr/local/lib/libglog.a)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'roborts_localization'
+-- ==> add_subdirectory(roborts_detection/roborts_localization)
+-- Found glog    (include: /usr/local/include, library: /usr/local/lib/libglog.a)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'roborts_bringup'
+-- ==> add_subdirectory(roborts_detection/roborts_bringup)
+-- +++ processing catkin package: 'roborts_tracking'
+-- ==> add_subdirectory(roborts_detection/roborts_tracking)
+-- Found OpenCV: /opt/ros/kinetic (found version "3.3.1") 
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/artinx-000/detection_ws/src/cmake-build-debug
